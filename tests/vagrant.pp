@@ -1,6 +1,6 @@
 node default {
-  include ::java
-  include ::java::devel
+  include ::java7
+  include ::java7::devel
 
   case $::operatingsystem {
     'Amazon': {

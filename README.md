@@ -6,8 +6,8 @@ Installs openjdk and sets JAVA_HOME
 Samples
 -------
 ```
-include java
-include java::devel
+include java7
+include java7::devel
 ```
 
 License

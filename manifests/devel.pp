@@ -1,4 +1,4 @@
-# Class: java::devel
+# Class: java7::devel
 #
 # This class installs the java jdk package
 #
@@ -14,20 +14,20 @@
 #
 #  For a standard installation, use:
 #
-#    class { 'java::devel':
+#    class { 'java7::devel':
 #      ensure => 'latest'
 #    }
 #
 #  To remove the installation, use:
 #
-#    class { 'java::devel':
+#    class { 'java7::devel':
 #      ensure => 'absent'
 #    }
 #
-class java::devel (
-  $ensure = $::java::params::jdk_package_ensure
-) inherits ::java::params {
-  package { $::java::params::jdk_package:
+class java7::devel (
+  $ensure = $::java7::params::jdk_package_ensure
+) inherits ::java7::params {
+  package { $::java7::params::jdk_package:
     ensure  => $ensure,
   }
 
